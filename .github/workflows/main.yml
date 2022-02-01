@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main, abuga006/ci_setup ]
+    branches: [ main, abuga006/ci_setup, abuga006/passing_tests ]
   pull_request:
     branches: [ main ]
 
@@ -34,3 +34,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Run unit tests
+        run: test
