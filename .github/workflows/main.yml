@@ -36,5 +36,6 @@ jobs:
           echo test, and deploy your project.
 
       - name: Run unit tests
-        run: make 
-        run: ./test
+        run:  cmake3 .
+              make 
+              ./test
