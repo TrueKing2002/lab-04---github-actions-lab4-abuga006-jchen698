@@ -36,4 +36,4 @@ jobs:
           echo test, and deploy your project.
 
       - name: Run unit tests
-        run: test
+        run: ./test
