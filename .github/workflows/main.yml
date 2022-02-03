@@ -36,6 +36,7 @@ jobs:
           echo test, and deploy your project.
 
       - name: Run unit tests
-        run:  cmake .
+        run:  git submodule add https://github.com/google/googletest.git
+              cmake .
               make 
               ./test
