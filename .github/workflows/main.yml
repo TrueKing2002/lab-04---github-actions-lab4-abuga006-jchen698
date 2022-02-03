@@ -36,7 +36,8 @@ jobs:
           echo test, and deploy your project.
 
       - name: Run unit tests
-        run:  git submodule update --init --recursive
+        run:  |
+              git submodule update --init --recursive
               cmake .
               make 
               ./test
